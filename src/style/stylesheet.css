@@ -1,0 +1,13 @@
+body {
+  background: white;
+  margin-left: 55px;
+  margin-right: 55px;
+  color: black;
+  font-family: 'Alata', sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
+}
