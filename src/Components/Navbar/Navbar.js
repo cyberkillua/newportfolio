@@ -6,21 +6,34 @@ import { animateScroll as scroll } from "react-scroll";
 const Nav = styled.nav`
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 55px;
-  color: black;
-  background: white;
-  border-bottom: 0px solid #f1f1f1;
-  padding: 0px 20px;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  color: #ffffff;
+  background: #204294;
   margin-top: 0;
   display: flex;
   justify-content: space-between;
+  padding-left: 116px;
+  padding-right: 100px;
+  @media (max-width: 768px) {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
   .logo {
-    padding: 15px 0;
+    
+    padding-top: 35px;
     color: white;
-    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    cursor: pointer;
+    font-size: 35px;
+    line-height: 53px;
+    font-family: "Khula", sans-serif;
+    font-weight: 800;
+    .dot{
+      color:#98FB4A;
+    }
+    
   }
 `;
 
@@ -32,7 +45,7 @@ const Navbar = () => {
         onClick={() => {
           scroll.scrollToTop();
         }}>
-        Alimi Moshood Abiola
+        Killua<span className="dot">.</span>
       </div>
       <Burger />
     </Nav>

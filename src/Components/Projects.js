@@ -8,16 +8,16 @@ const Projectss = styled.section`
   width: 100%;
   h3 {
     font-weight: 800;
-    font-style: italic;
-    @media (max-width: 768px) {
-      font-size: large;
-    }
+    font-family: "Khula", sans-serif;
   }
-
+  @media (max-width: 768px){
+    padding:25px;
+  }
   .ProjectGrid {
     width: 100%;
     margin-top: 2em;
-    grid-gap: 50px 100px;
+    
+    grid-gap: 10px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     @media (max-width: 1024px) {
@@ -25,6 +25,7 @@ const Projectss = styled.section`
     }
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
+      padding-left: 18px;
     }
     a {
       color: white;
@@ -34,22 +35,35 @@ const Projectss = styled.section`
       transform: scale(1.05);
     }
     div {
-      height: 250px;
-      width: 100%;
+      width: 380px;
+      height: 380px;
       padding: 35px;
       border: 2px solid #cc66ff;
-      background: linear-gradient(180deg, #d090e0 0%, #7f7ff7 100%);
-
+      border-radius: 10px;
+      background: #000000;
+      h4{
+        font-weight: 400;
+         font-family: "Khula", sans-serif;
+         font-size: 35px;
+      }
+      h6{
+        font-weight: 300;
+         font-family: "Khula", sans-serif;
+         font-size: 15px;
+      }
       p {
-        padding-top: 10px;
-        font-size: small;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 300;
+         font-family: "Khula", sans-serif;
       }
       h5 {
         background: #fb4a59;
         outline: none;
         border: none;
         width: 50px;
-        margin-top: 40px;
+        margin-top: 150px;
         padding-left: 5px;
         font-weight: bold;
         letter-spacing: 0.07rem;
@@ -57,12 +71,16 @@ const Projectss = styled.section`
         display: flex;
         cursor: pointer;
         align-items: center;
+        @media (max-width: 768px){
+          margin-top: 50px;
+        }
         
       }
       @media (max-width: 768px) {
+        padding:20px;
         margin-bottom: 40px;
-        height:250px;
-        width: 100%;
+        height:280px;
+        width: 280px;
       }
     }
   }
@@ -86,7 +104,7 @@ const Projects = () => {
           <div>
             <h4>Budget Calculator</h4>
             <h6>HTML + CSS + Javascript</h6>
-            <p>A web app that helps calculate income vs expense</p>
+            <p> Income vs expense</p>
             <h5>GO</h5>
           </div>
         </a>

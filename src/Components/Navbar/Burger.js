@@ -6,8 +6,8 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 10px;
-  right: 20px;
+  top: 35px;
+  right: 35px;
   z-index: 20;
   display: none;
   @media (max-width: 768px) {
@@ -18,7 +18,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#cc66ff' : '#cc66ff'};
+    background-color: ${({ open }) => open ? 'white' : 'white'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

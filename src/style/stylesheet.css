@@ -1,13 +1,14 @@
 body {
-  background: white;
-  margin-left: 55px;
-  margin-right: 55px;
-  color: black;
-  font-family: 'Alata', sans-serif;
+  background: #123382;
+  margin: 100px;
+
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
   body {
     margin: 0px;
+    padding: 0px;
+    
   }
 }
