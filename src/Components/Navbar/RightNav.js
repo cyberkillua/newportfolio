@@ -19,7 +19,7 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #cc66ff;
+    background-color: white;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     opacity: ${({ visible }) => (visible ? 0 : 1)};
@@ -32,7 +32,7 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     a {
-      color: white;
+      color: #204294;
       font-size: x-large;
     }
   }

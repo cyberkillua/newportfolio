@@ -33,8 +33,10 @@ const Section = styled.section`
     .stuff {
       display: flex;
       justify-content: space-around;
+      margin-left: 20px;
       img {
         height: fit-content;
+        
         @media (max-width: 768px) {
           padding-top: 25px;
         }
@@ -141,7 +143,7 @@ const Home = () => {
           experience with:
         </h6>
         <div className="stuff">
-          <img src={languages} />
+          <img src={languages} style={{"paddingLeft":"15px"}}/>
          <span className="imaged"> <img src={frameworks} alt="frameworks" /></span>
          <span className="imaged"><img src={database} alt="database" /></span>
          <span className="imaged"> <img src={tools} alt="tools" /></span>

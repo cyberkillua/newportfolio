@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
+import killua from "./killua.png"
 import { animateScroll as scroll } from "react-scroll";
 
 const Nav = styled.nav`
@@ -45,7 +46,7 @@ const Navbar = () => {
         onClick={() => {
           scroll.scrollToTop();
         }}>
-        Killua<span className="dot">.</span>
+        <img src={killua} alt="logo"/>
       </div>
       <Burger />
     </Nav>
