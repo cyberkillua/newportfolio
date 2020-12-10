@@ -3,7 +3,7 @@ import styled from "styled-components";
 import twitter from "../imgs/twitter.png";
 import link from "../imgs/link.png";
 import git from "../imgs/git.png";
-import mail from "../imgs/maill.png";
+import mail from "../imgs/maill.PNG";
 
 const Footer = styled.footer`
   padding: 0px 100px;
