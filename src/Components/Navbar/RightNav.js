@@ -17,9 +17,12 @@ const Ul = styled.ul`
       color:#98FB4A;
     }
   }
+  a:hover {
+    text-decoration: none;
+  }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: #7F7FF7;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     opacity: ${({ visible }) => (visible ? 0 : 1)};
@@ -32,7 +35,7 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     a {
-      color: #204294;
+      color:#FFFFFF;
       font-size: x-large;
     }
   }
@@ -51,7 +54,7 @@ const RightNav = ({ open, setOpen }) => {
         onClick={() => {
           setOpen(false);
         }}>
-       <span className="dot"> HOME</span>
+       <span className="dot"> Home</span>
       </Link>
       <Link
         className="link"
@@ -63,7 +66,7 @@ const RightNav = ({ open, setOpen }) => {
         onClick={() => {
           setOpen(false);
         }}>
-        PROJECTS
+        Projects
       </Link>
       <Link
         className="link"
@@ -75,7 +78,7 @@ const RightNav = ({ open, setOpen }) => {
         onClick={() => {
           setOpen(false);
         }}>
-        CONTACT ME{" "}
+        Connect{" "}
       </Link>
     </Ul>
   );

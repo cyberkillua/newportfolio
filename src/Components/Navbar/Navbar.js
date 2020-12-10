@@ -16,21 +16,16 @@ const Nav = styled.nav`
   margin-top: 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 116px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   @media (max-width: 768px) {
-    padding-left: 15px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .logo {
-    
     padding-top: 35px;
     color: white;
     cursor: pointer;
-    font-size: 35px;
-    line-height: 53px;
-    font-family: "Khula", sans-serif;
-    font-weight: 800;
     .dot{
       color:#98FB4A;
     }

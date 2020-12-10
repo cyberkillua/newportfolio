@@ -4,93 +4,196 @@ import emoji from "react-easy-emoji";
 import twitter from "../imgs/twitter.png";
 import link from "../imgs/link.png";
 import git from "../imgs/git.png";
-import languages from "../imgs/languages.PNG";
-import frameworks from "../imgs/fremeworks.PNG";
-import database from "../imgs/database.PNG";
-import tools from "../imgs/tools.PNG";
+import html from "../imgs/html.png";
+import css from "../imgs/css.png";
+import sass from "../imgs/sass.png";
+import javascript from "../imgs/javascript.png";
+import react from "../imgs/react.png";
+import vue from "../imgs/vue.png";
+import node from "../imgs/nodejs.png";
+import mongo from "../imgs/mongodb.png";
+import fire from "../imgs/firebase.png";
+import hero from "../imgs/heroku.png";
+import net from "../imgs/netlify.png";
+import giticon from "../imgs/giticon.png";
 
 const Section = styled.section`
   margin-top: 7rem;
-  padding: 25px;
+  padding-top: 25px;
   @media (max-width: 768px) {
-    padding-left: 15px;
-    padding-right: 10px;
   }
   .skills {
     margin-top: 20px;
     padding-top: 30px;
 
     h3 {
-      color: #ffffff;
-      padding-left: 0px;
       font-family: "Khula", sans-serif;
       font-weight: 500;
+      font-size: 50px;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 25px;
+        line-height: 29px;
+      }
     }
     h6 {
       font-family: "Khula", sans-serif;
       font-weight: 300;
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
     }
     .stuff {
-      display: flex;
-      justify-content: space-around;
-      margin-left: 20px;
-      img {
-        height: fit-content;
-        
-        @media (max-width: 768px) {
-          padding-top: 25px;
-        }
-      }
-      .imaged{
-        padding-top: 25px;
-        @media (max-width: 768px) {
-          margin: 20px;
-        }
+      margin-top: 80px;
+      display: grid;
+      grid-gap: 10px 30px;
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
       }
       @media (max-width: 768px) {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-content: center;
-        padding-left: 60px;
       }
-
+      
+      table {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+       
+        @media (max-width: 1024px) {
+          width: auto;
+          margin: auto;
+        }
+        @media (max-width: 768px) {
+          width: auto;
+          margin: auto;
+          margin-top: 50px;
+        }
+       
+        th {
+          
+          height: 43px;
+          width: 181px;
+          border-radius: nullpx;
+          font-family: "Khula", sans-serif;
+          font-size: 35px;
+          line-height: 41px;
+          letter-spacing: 0em;
+          padding-bottom: 20px;
+        }
+        td {
+          padding: 0px;
+          
+          p {
+            font-family: "Khula", sans-serif;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0em;
+            color: #98fb4a;
+            padding-top: 20px;
+          }
+        }
+      }
+      
     }
   }
   .aboutMe {
-    width: 50%;
+    width: 70%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
     @media (max-width: 768px) {
       width: 100%;
     }
     p {
       font-size: 30px;
       line-height: 35px;
+      letter-spacing: 0em;
+      text-align: left;
       font-family: "Khula", sans-serif;
       padding-bottom: 10px;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
     }
     h4 {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
+      font-family: Poppins;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 75px;
+      letter-spacing: 0em;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
       .dot {
         color: #98fb4a;
       }
     }
     h5 {
       font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
       font-weight: 400;
-      font-size: 15px;
-      line-height: 20px;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 23px;
+      }
     }
     .touch {
       padding-top: 40px;
       display: flex;
       img {
-        padding: 13px 25px 13px 0px;
+        padding: 13px 50px 13px 0px;
+        @media (max-width: 1024px) {
+          padding: 13px 26px 13px 0px;
+        }
+        @media (max-width: 768px) {
+          padding: 13px 26px 13px 0px;
+          height: 50px;
+          border-radius: 0px;
+        }
       }
       .dot {
+        width: 234px;
+        height: 86px;
+        border: 3px solid #98fb4a;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding-top: 20px;
+        margin-left: 150px;
+        font-family: Poppins;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
         color: #98fb4a;
-        font-size: 10px;
-        padding-top: 30px;
+        @media (max-width: 1024px) {
+          margin-left: 60px;
+        }
+        @media (max-width: 768px) {
+          height: 35px;
+          width: 88px;
+          font-size: 12px;
+          line-height: 14px;
+          margin-left: 60px;
+          border: 1.5px solid #98fb4a;
+          padding-top: 10px;
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -116,7 +219,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             title="twitter">
-            <img src={twitter} alt="twitter"/>
+            <img src={twitter} alt="twitter" />
           </a>
           <a
             href="https://www.linkedin.com/in/moshood-alimi-413869199/"
@@ -140,13 +243,126 @@ const Home = () => {
         <h6>
           I'm proficient in several skills and i am constanly improving and
           gaining experience. Here are some of the technologies I have
-          experience with:
+          experience with.
         </h6>
         <div className="stuff">
-          <img src={languages} style={{"paddingLeft":"15px"}}/>
-         <span className="imaged"> <img src={frameworks} alt="frameworks" /></span>
-         <span className="imaged"><img src={database} alt="database" /></span>
-         <span className="imaged"> <img src={tools} alt="tools" /></span>
+          <table>
+            <colgroup span="2"></colgroup>
+            <thead>
+              <tr>
+                <th colSpan="2" scope="colgroup">
+                  Languages
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src={html} alt="html" />
+                  <p>HTML</p>
+                </td>
+                <td>
+                  {" "}
+                  <img src={css} alt="css" />
+                  <p>CSS3</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <img src={sass} alt="sass" />
+                  <p>SASS</p>
+                </td>
+                <td>
+                  <img src={javascript} alt="javascript" />
+                  <p>Javascript</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <colgroup span="2"></colgroup>
+            <thead>
+              <tr>
+                <th colSpan="2" scope="colgroup">
+                  Frameworks
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src={react} alt="react" />
+                  <p>ReactJS</p>
+                </td>
+                <td>
+                  {" "}
+                  <img src={node} alt="NodeJS" />
+                  <p>NodeJS</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <img src={vue} alt="VueJS" />
+                  <p>VueJS</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table style={{ width: "200px", height: "200px" }}>
+            <colgroup span="2"></colgroup>
+            <thead>
+              <tr>
+                <th colSpan="2" scope="colgroup">
+                  Database
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src={fire} alt="Firebase" />
+                  <p>Firebase</p>
+                </td>
+                <td>
+                  {" "}
+                  <img src={mongo} alt="MongoDB" />
+                  <p>MongoDB</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <colgroup span="2"></colgroup>
+            <thead>
+              <tr>
+                <th colSpan="2" scope="colgroup">
+                  Tools
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src={hero} alt="Heroku" />
+                  <p>Heroku</p>
+                </td>
+                <td>
+                  {" "}
+                  <img src={net} alt="Netlify" />
+                  <p>Netlify</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <img src={giticon} alt="Git/Git bash" />
+                  <p>Git/Git bash</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </Section>

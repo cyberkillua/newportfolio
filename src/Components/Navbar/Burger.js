@@ -6,7 +6,7 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 35px;
+  top: 45px;
   right: 35px;
   z-index: 20;
   display: none;

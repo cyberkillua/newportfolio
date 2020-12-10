@@ -4,28 +4,33 @@ import styled from "styled-components";
 
 
 const Projectss = styled.section`
-  padding: 25px;
+  margin-top: 80px;
   width: 100%;
   h3 {
     font-weight: 800;
     font-family: "Khula", sans-serif;
-  }
-  @media (max-width: 768px){
-    padding:25px;
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    @media (max-width: 768px){
+      font-size: 25px;
+      line-height: 29px;
+    }
   }
   .ProjectGrid {
     width: 100%;
-    margin-top: 2em;
-    
-    grid-gap: 10px 20px;
+    margin-top: 60px;
+    grid-gap: 60px 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     @media (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
-      padding-left: 18px;
+      grid-template-columns: repeat(1, 1fr); 
+      margin-top: 30px;
+      
     }
     a {
       color: white;
@@ -34,54 +39,71 @@ const Projectss = styled.section`
       text-decoration: none;
       transform: scale(1.05);
     }
-    div {
+    .box {
+      position: relative;
       width: 380px;
       height: 380px;
-      padding: 35px;
-      border: 2px solid #cc66ff;
+      background: #5252C2;
+      border: 5px solid #98FB4A;
+      box-sizing: border-box;
       border-radius: 10px;
-      background: #000000;
-      h4{
-        font-weight: 400;
-         font-family: "Khula", sans-serif;
-         font-size: 35px;
-      }
-      h6{
-        font-weight: 300;
-         font-family: "Khula", sans-serif;
-         font-size: 15px;
-      }
-      p {
-        margin-top: 10px;
-        font-size: 20px;
-        line-height: 29px;
-        font-weight: 300;
-         font-family: "Khula", sans-serif;
-      }
-      h5 {
-        background: #fb4a59;
-        outline: none;
-        border: none;
-        width: 50px;
-        margin-top: 150px;
-        padding-left: 5px;
-        font-weight: bold;
-        letter-spacing: 0.07rem;
-        color: #fff !important;
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        @media (max-width: 768px){
-          margin-top: 50px;
-        }
-        
+      @media (max-width: 1024px) {
+        height: 380px;
+        width: 331px;
+        margin: auto;
       }
       @media (max-width: 768px) {
-        padding:20px;
-        margin-bottom: 40px;
-        height:280px;
-        width: 280px;
+        height: 259px;
+        width: 331px;
+        margin: auto;
       }
+      h4{
+          font-weight: 500;
+          font-family: "Khula", sans-serif;
+          font-size: 35px;
+          line-height: 41px;
+          color: #FFFFFF;
+          padding-top: 25px;
+          padding-left: 25px;
+      }
+      h6{
+          font-weight: 300;
+          font-family: "Khula", sans-serif;
+          font-size: 20px;
+          line-height: 23px;
+          color: #FFFFFF;
+          padding-left: 25px;
+      }
+      p {
+          line-height: 29px;
+          font-weight: 400;
+          font-family: "Khula", sans-serif;
+          font-size: 25px;
+          line-height: 29px;
+          padding-top: 35px;
+          padding-left: 25px;
+          @media (max-width: 768px) {
+            padding-top: 25px;
+            font-size: 20px;
+            line-height: 23px;
+          }
+      }
+      .go{
+        position: absolute;
+        bottom: 60px;
+        left: 25px;
+        height: 25px;
+        width: 55px;
+        border-radius: 0px;
+        background: #FB4A59;
+        text-align: center;
+        @media (max-width: 768px) {
+          bottom: 10px;
+        }
+      }
+    }
+      
+     
     }
   }
 `;
@@ -90,54 +112,54 @@ const Projects = () => {
   return (
     <>
     <Projectss id="projects">
-      <h3>Check out some of my work</h3>
+      <h3>Checkout some of my works</h3>
       <div className="ProjectGrid">
         <a href="https://instaclone70.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <div>
+          <div className="box">
             <h4>Instagram Clone</h4>
-            <h6>HTML + CSS + Javascript + React + Express + Nodejs + MongoDB</h6>
+            <h6>React + Nodejs + MongoDB</h6>
             <p>A web clone of Instagram</p>
-            <h5>GO</h5>
+            <div className="go">GO</div>
           </div>
         </a>
         <a href="https://budgetappp.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div>
+        <div className="box">
             <h4>Budget Calculator</h4>
             <h6>HTML + CSS + Javascript</h6>
             <p> Income vs expense</p>
-            <h5>GO</h5>
+            <div className="go">GO</div>
           </div>
         </a>
         <a href="https://killuaquiz.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div>
+        <div className="box">
             <h4>Quizer</h4>
-            <h6>HTML + CSS + Javascript + React</h6>
+            <h6>React</h6>
             <p>An Online Quiz App  </p>
-            <h5>GO</h5>
+            <div className="go">GO</div>
           </div>
         </a>
         <a href="https://dicedd.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div>
+        <div className="box">
             <h4>Pig Game</h4>
             <h6>HTML + CSS + Javascript</h6>
             <p>You vs Com, 2 dice who wins?</p>
-            <h5>GO</h5>
+            <div className="go">GO</div>
           </div>
         </a>
         <a href="https://photowalled.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div>
+        <div className="box">
             <h4>Photowall</h4>
-            <h6>HTML + CSS + Javascript + React + Firebase</h6>
+            <h6>React + Firebase</h6>
             <p>An Online Album</p>
-            <h5>GO</h5>
+            <div className="go">GO</div>
           </div>
         </a>
-        <a href="https://thedicedgame.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <div>
-            <h4>Pig Game</h4>
-            <h6>HTML + CSS + Javascript</h6>
-            <p>You vs Com, a dice who wins?</p>
-            <h5>GO</h5>
+        <a href="https://relaxed-shirley-f10c3b.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <div className="box">
+            <h4>Whoisng</h4>
+            <h6>React</h6>
+            <p>A webapp that searchs and displays information about domains</p>
+            <div className="go">GO</div>
           </div>
         </a>
       </div>
