@@ -18,8 +18,8 @@ import net from "../imgs/netlify.png";
 import giticon from "../imgs/giticon.png";
 
 const Section = styled.section`
-  margin-top: 7rem;
-  padding-top: 25px;
+  margin-top: 100px;
+  padding-top: 100px;
   @media (max-width: 768px) {
   }
   .skills {
@@ -118,6 +118,7 @@ const Section = styled.section`
       letter-spacing: 0em;
       text-align: left;
       font-family: "Khula", sans-serif;
+      font-weight: 500;
       padding-bottom: 10px;
       @media (max-width: 768px) {
         font-size: 15px;
@@ -169,14 +170,14 @@ const Section = styled.section`
       }
       .dot {
         width: 234px;
-        height: 86px;
+        height: 70px;
         border: 3px solid #98fb4a;
         box-sizing: border-box;
         border-radius: 5px;
-        padding-top: 20px;
+        padding-top: 15px;
         margin-left: 150px;
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 35px;
         letter-spacing: 0em;
         text-align: center;

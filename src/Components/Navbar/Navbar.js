@@ -16,8 +16,8 @@ const Nav = styled.nav`
   margin-top: 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 20px;
   @media (max-width: 768px) {
     padding-left: 10px;
     padding-right: 10px;

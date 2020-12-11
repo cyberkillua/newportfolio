@@ -11,7 +11,8 @@ const Ul = styled.ul`
     padding: 18px 20px;
     color: #ffffff;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 500;
     font-family: "Khula", sans-serif;
     .dot{
       color:#98FB4A;

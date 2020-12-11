@@ -2,8 +2,8 @@ body {
   background: #123382;
   color: #ffffff;
   margin: 0px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 20px;
 }
 
 @media (max-width: 768px) {
