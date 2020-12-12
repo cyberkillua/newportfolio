@@ -56,6 +56,7 @@ const Projectss = styled.section`
         height: 259px;
         width: 331px;
         margin: auto;
+        border: 3px solid #98FB4A;
       }
       h4{
           font-weight: 500;
@@ -158,7 +159,7 @@ const Projects = () => {
         <div className="box">
             <h4>Whoisng</h4>
             <h6>React</h6>
-            <p>A webapp that searchs and displays information about domains</p>
+            <p>A webapp that searches and displays information about domains</p>
             <div className="go">GO</div>
           </div>
         </a>
