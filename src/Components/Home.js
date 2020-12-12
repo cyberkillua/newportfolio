@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import emoji from "react-easy-emoji";
-import twitter from "../imgs/twitter.png";
 import link from "../imgs/link.png";
 import git from "../imgs/git.png";
+import twitter from "../imgs/twitter.png"
 import html from "../imgs/html.png";
 import css from "../imgs/css.png";
 import sass from "../imgs/sass.png";
@@ -27,8 +27,8 @@ const Section = styled.section`
     padding-top: 30px;
 
     h3 {
+      font-weight: 800;
       font-family: "Khula", sans-serif;
-      font-weight: 500;
       font-size: 50px;
       line-height: 59px;
       letter-spacing: 0em;
@@ -158,14 +158,18 @@ const Section = styled.section`
       padding-top: 40px;
       display: flex;
       img {
-        padding: 13px 50px 13px 0px;
-        @media (max-width: 1024px) {
-          padding: 13px 26px 13px 0px;
-        }
+        height: 30px;
+        width: 30px;
+        border-radius: 0px;
+        margin-top: 20px;
+        margin-right: 40px;
+        
         @media (max-width: 768px) {
-          padding: 13px 26px 13px 0px;
-          height: 50px;
+          height: 20px;
+          width: 20px;
           border-radius: 0px;
+          margin-top: 20px;
+          margin-right: 25px;
         }
       }
       .dot {
@@ -175,7 +179,7 @@ const Section = styled.section`
         box-sizing: border-box;
         border-radius: 5px;
         padding-top: 15px;
-        margin-left: 150px;
+        margin-left: 160px;
         font-family: Poppins;
         font-size: 20px;
         line-height: 35px;
@@ -204,7 +208,7 @@ const Home = () => {
   return (
     <Section id="home">
       <div className="aboutMe">
-        <p>Heyyy! {emoji("👋")}</p>
+        <p>Heyyy! {emoji("👋🏾")}</p>
         <h4>
           I'm Moshood Alimi "Killua",
           <br />

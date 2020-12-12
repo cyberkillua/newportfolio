@@ -26,10 +26,12 @@ const Nav = styled.nav`
     padding-top: 35px;
     color: white;
     cursor: pointer;
-    .dot{
-      color:#98FB4A;
+    height: 57px;
+    width: 131px;
+    @media (max-width: 768px) {
+      height: 38px;
+      width: 88px;
     }
-    
   }
 `;
 

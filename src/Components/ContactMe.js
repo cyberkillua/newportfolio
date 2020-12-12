@@ -25,6 +25,10 @@ const Footer = styled.footer`
     padding-left: 10px;
   }
   .copyright {
+    img {
+      height: 57px;
+      width: 131px;
+    }
     @media (max-width: 768px) {
       display:none;
     }
@@ -45,6 +49,14 @@ const Footer = styled.footer`
     @media (max-width: 768px) {
       display: flex;
       padding-left: 10px;
+    }
+    img {
+      height: 30px;
+      width: 30px;
+      @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+      }
     }
     a {
       position: relative;
