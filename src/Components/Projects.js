@@ -163,6 +163,14 @@ const Projects = () => {
             <div className="go">GO</div>
           </div>
         </a>
+        <a href="https://getcryptonews.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <div className="box">
+            <h4>Crypto News</h4>
+            <h6>Vuejs</h6>
+            <p>A webapp that displays news about Crypto currencies</p>
+            <div className="go">GO</div>
+          </div>
+        </a>
       </div>
     </Projectss>
     </>
