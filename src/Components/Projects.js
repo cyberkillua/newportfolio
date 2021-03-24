@@ -117,7 +117,8 @@ const Projects = () => {
           <a
             href="https://getcryptonews.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
               <h4>Crypto News</h4>
               <h6>Vuejs</h6>
@@ -128,7 +129,8 @@ const Projects = () => {
           <a
             href="https://instaclone70.herokuapp.com/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
               <h4>Instagram Clone</h4>
               <h6>React + Nodejs + MongoDB</h6>
@@ -137,20 +139,22 @@ const Projects = () => {
             </div>
           </a>
           <a
-            href="https://budgetappp.netlify.app/"
+            href="https://moshchatapp.netlify.app"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
-              <h4>Budget Calculator</h4>
-              <h6>HTML + CSS + Javascript</h6>
-              <p> Income vs expense</p>
+              <h4>Chat App</h4>
+              <h6>Nuxt.js + Vue.js + Vuetify + Firebase</h6>
+              <p> A simple Chat app</p>
               <div className="go">GO</div>
             </div>
           </a>
           <a
             href="https://killuaquiz.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
               <h4>Quizer</h4>
               <h6>React</h6>
@@ -161,7 +165,8 @@ const Projects = () => {
           <a
             href="https://dicedd.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
               <h4>Pig Game</h4>
               <h6>HTML + CSS + Javascript</h6>
@@ -173,7 +178,8 @@ const Projects = () => {
           <a
             href="https://relaxed-shirley-f10c3b.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className="box">
               <h4>Whoisng</h4>
               <h6>React</h6>
