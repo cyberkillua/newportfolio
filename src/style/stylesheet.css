@@ -5,13 +5,65 @@ body {
   padding-left: 80px;
   padding-right: 20px;
 }
-
+.photo {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  background: url("../imgs/crypto.jpg") no-repeat;
+  background-size: contain;
+  margin: 20px auto 0;
+}
+.insta {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  background: url("../imgs/insta.png") no-repeat;
+  background-size: contain;
+  margin: 0px auto 0;
+}
+.chat {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  background: url("../imgs/chatbox.png") no-repeat;
+  background-size: contain;
+  margin: 20px auto 0;
+}
+.quiz {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  background: url("../imgs/quiz.jpg") no-repeat;
+  background-size: contain;
+  margin: 20px auto 0;
+}
+.who {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  background: url("../imgs/who.png") no-repeat;
+  background-size: contain;
+  margin: 20px auto 0;
+}
 @media (max-width: 768px) {
   body {
     margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
+  .photo {
+    height: 250px;
+  }
+  .insta {
+    height: 250px;
+  }
+  .chat {
+    height: 250px;
+  }
+  .quiz {
+    height: 250px;
+  }
+  .who {
+    height: 250px;
+  }
 }

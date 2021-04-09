@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+// import cry from "../imgs/crypto.jpg";
 
 const Projectss = styled.section`
-  margin-top: 80px;
+  padding: 90px 60px;
   width: 100%;
+  @media (max-width: 1024px) {
+    padding: 90px 0;
+  }
   h3 {
     font-weight: 800;
     font-family: "Khula", sans-serif;
@@ -11,24 +15,22 @@ const Projectss = styled.section`
     line-height: 59px;
     letter-spacing: 0em;
     text-align: left;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       font-size: 25px;
       line-height: 29px;
     }
   }
   .ProjectGrid {
-    width: 100%;
     margin-top: 60px;
-    grid-gap: 60px 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    grid-row-gap: 60px;
+    grid-column-gap: 75px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
     @media (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr); 
       margin-top: 30px;
-      
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-column-gap: 50px;
     }
     a {
       color: white;
@@ -39,70 +41,55 @@ const Projectss = styled.section`
     }
     .box {
       position: relative;
-      width: 380px;
-      height: 380px;
-      background: #5252C2;
-      border: 5px solid #98FB4A;
+      padding: 0 20px;
+      height: 680px;
+      background: #5252c2;
       box-sizing: border-box;
-      border-radius: 10px;
-      @media (max-width: 1024px) {
-        height: 380px;
-        width: 331px;
-        margin: auto;
-      }
+      
       @media (max-width: 768px) {
-        height: 259px;
-        width: 331px;
+        height: 500px;
         margin: auto;
-        border: 3px solid #98FB4A;
+        padding-left: 10px;
       }
-      h4{
-          font-weight: 500;
-          font-family: "Khula", sans-serif;
-          font-size: 35px;
-          line-height: 41px;
-          color: #FFFFFF;
-          padding-top: 25px;
-          padding-left: 25px;
-      }
-      h6{
-          font-weight: 300;
-          font-family: "Khula", sans-serif;
-          font-size: 20px;
-          line-height: 23px;
-          color: #FFFFFF;
-          padding-left: 25px;
-      }
-      p {
-          line-height: 29px;
-          font-weight: 400;
-          font-family: "Khula", sans-serif;
-          font-size: 25px;
-          line-height: 29px;
-          padding-top: 35px;
-          padding-left: 25px;
-          @media (max-width: 768px) {
-            padding-top: 25px;
-            font-size: 20px;
-            line-height: 23px;
-          }
-      }
-      .go{
-        position: absolute;
-        bottom: 60px;
-        left: 25px;
-        height: 25px;
-        width: 55px;
-        border-radius: 0px;
-        background: #FB4A59;
-        text-align: center;
+      .text {
+        padding: 40px 20px 20px;
+        height: 300px;
         @media (max-width: 768px) {
-          bottom: 10px;
+            height: 250px;
+            padding-right: 10px;
+            
+          }
+        h4 {
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 3px;
+          font-size: 18px;
+          font-family: "Khula", sans-serif;
+          line-height: 41px;
+          color: #ffffff;
+          @media (max-width: 768px) {
+            font-size: 17px;
+          }
+        }
+       
+        p {
+          font-family: "Manrope",sans-serif;
+          font-weight: 800;
+          font-size: 37px;
+          padding-right: 60px;
+          margin-top: 15px;
+          line-height: 1.2;
+          @media (max-width: 768px) {
+            font-size: 25px;
+            padding-right: 0;
+          }
         }
       }
-    }
-      
-     
+        
+          
+        
+        
+      }
     }
   }
 `;
@@ -120,10 +107,16 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="box">
-              <h4>Crypto News</h4>
-              <h6>Vuejs</h6>
-              <p>A webapp that displays news about Crypto currencies</p>
-              <div className="go">GO</div>
+              <div className="text">
+                <h4>Crypto News </h4>
+                <p>
+                  A website that displays news about Crypto currencies made with
+                  Vue
+                </p>
+              </div>
+              <div className="photo">
+                {/* <img src={cry} alt="crypto mockup" /> */}
+              </div>
             </div>
           </a>
           <a
@@ -132,10 +125,15 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="box">
-              <h4>Instagram Clone</h4>
-              <h6>React + Nodejs + MongoDB</h6>
-              <p>A web clone of Instagram</p>
-              <div className="go">GO</div>
+              <div className="text">
+                <h4>Instagram Clone </h4>
+                <p>
+                  A web clone of Instagram, made with React, nodejs and MongoDB
+                </p>
+              </div>
+              <div className="insta">
+                {/* <img src={cry} alt="crypto mockup" /> */}
+              </div>
             </div>
           </a>
           <a
@@ -144,10 +142,16 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="box">
-              <h4>Chat App</h4>
-              <h6>Nuxt.js + Vue.js + Vuetify + Firebase</h6>
-              <p> A simple Chat app</p>
-              <div className="go">GO</div>
+              <div className="text">
+                <h4>Chat App </h4>
+                <p>
+                  {" "}
+                  A messaging app made with Nuxtjs, Vue, Vuetify and Firebase{" "}
+                </p>
+              </div>
+              <div className="chat">
+                {/* <img src={cry} alt="crypto mockup" /> */}
+              </div>
             </div>
           </a>
           <a
@@ -156,22 +160,13 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="box">
-              <h4>Quizer</h4>
-              <h6>React</h6>
-              <p>An Online Quiz App </p>
-              <div className="go">GO</div>
-            </div>
-          </a>
-          <a
-            href="https://dicedd.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="box">
-              <h4>Pig Game</h4>
-              <h6>HTML + CSS + Javascript</h6>
-              <p>You vs Com, 2 dice who wins?</p>
-              <div className="go">GO</div>
+              <div className="text">
+                <h4>Quizer</h4>
+                <p>An Online Quiz App made with React </p>
+              </div>
+              <div className="quiz">
+                {/* <img src={cry} alt="crypto mockup" /> */}
+              </div>
             </div>
           </a>
 
@@ -181,12 +176,16 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <div className="box">
-              <h4>Whoisng</h4>
-              <h6>React</h6>
-              <p>
-                A webapp that searches and displays information about domains
-              </p>
-              <div className="go">GO</div>
+              <div className="text">
+                <h4>Whoisng </h4>
+                <p>
+                  A website that searches and displays information about domain,
+                  made with React
+                </p>
+              </div>
+              <div className="who">
+                {/* <img src={cry} alt="crypto mockup" /> */}
+              </div>
             </div>
           </a>
         </div>

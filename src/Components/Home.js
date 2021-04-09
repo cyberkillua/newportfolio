@@ -61,12 +61,12 @@ const Section = styled.section`
       @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
       }
-      
+
       table {
         width: 250px;
         height: 250px;
         text-align: center;
-       
+
         @media (max-width: 1024px) {
           width: auto;
           margin: auto;
@@ -76,9 +76,8 @@ const Section = styled.section`
           margin: auto;
           margin-top: 50px;
         }
-       
+
         th {
-          
           height: 43px;
           width: 181px;
           border-radius: nullpx;
@@ -90,7 +89,7 @@ const Section = styled.section`
         }
         td {
           padding: 0px;
-          
+
           p {
             font-family: "Khula", sans-serif;
             font-size: 15px;
@@ -101,7 +100,6 @@ const Section = styled.section`
           }
         }
       }
-      
     }
   }
   .aboutMe {
@@ -163,7 +161,7 @@ const Section = styled.section`
         border-radius: 0px;
         margin-top: 20px;
         margin-right: 40px;
-        
+
         @media (max-width: 768px) {
           height: 20px;
           width: 20px;
@@ -186,6 +184,12 @@ const Section = styled.section`
         letter-spacing: 0em;
         text-align: center;
         color: #98fb4a;
+        a {
+          color: #98fb4a;
+        }
+        a:hover {
+          text-decoration: none;
+        }
         @media (max-width: 1024px) {
           margin-left: 60px;
         }
@@ -223,24 +227,36 @@ const Home = () => {
             href="https://twitter.com/Killua713"
             target="_blank"
             rel="noopener noreferrer"
-            title="twitter">
+            title="twitter"
+          >
             <img src={twitter} alt="twitter" />
           </a>
           <a
             href="https://www.linkedin.com/in/moshood-alimi-413869199/"
             target="_blank"
             rel="noopener noreferrer"
-            title="linkedin">
+            title="linkedin"
+          >
             <img src={link} alt="linkdln" />
           </a>
           <a
             href="https://github.com/cyberkillua"
             target="_blank"
             rel="noopener noreferrer"
-            title="github">
+            title="github"
+          >
             <img src={git} alt="github" />
           </a>
-          <div className="dot"> Get in touch</div>
+          <div className="dot">
+            <a
+              href="mailto:moshood988@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="email"
+            >
+              Get in touch
+            </a>{" "}
+          </div>
         </div>
       </div>
       <div className="skills">
