@@ -3,8 +3,9 @@ import styled from "styled-components";
 // import cry from "../imgs/crypto.jpg";
 
 const Projectss = styled.section`
-  padding: 90px 60px;
+  padding: 90px 0px;
   width: 100%;
+
   @media (max-width: 1024px) {
     padding: 90px 0;
   }
@@ -43,9 +44,10 @@ const Projectss = styled.section`
       position: relative;
       padding: 0 20px;
       height: 680px;
-      background: #5252c2;
+      border-radius: 10px;
+      /* background: #5252c2; */
       box-sizing: border-box;
-      
+
       @media (max-width: 768px) {
         height: 500px;
         margin: auto;
@@ -55,10 +57,9 @@ const Projectss = styled.section`
         padding: 40px 20px 20px;
         height: 300px;
         @media (max-width: 768px) {
-            height: 250px;
-            padding-right: 10px;
-            
-          }
+          height: 250px;
+          padding-right: 10px;
+        }
         h4 {
           text-transform: uppercase;
           font-weight: 800;
@@ -71,9 +72,9 @@ const Projectss = styled.section`
             font-size: 17px;
           }
         }
-       
+
         p {
-          font-family: "Manrope",sans-serif;
+          font-family: "Manrope", sans-serif;
           font-weight: 800;
           font-size: 37px;
           padding-right: 60px;
@@ -85,11 +86,6 @@ const Projectss = styled.section`
           }
         }
       }
-        
-          
-        
-        
-      }
     }
   }
 `;
@@ -98,7 +94,7 @@ const Projects = () => {
   return (
     <>
       <Projectss id="projects">
-        <h3>Checkout some of my works</h3>
+        <h3>My Projects</h3>
 
         <div className="ProjectGrid">
           <a
@@ -106,9 +102,9 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="box">
-              <div className="text">
-                <h4>Crypto News </h4>
+            <div className="box" style={{ background: "#D1D43F" }}>
+              <div className="text" style={{ color: "#5E5A00" }}>
+                <h4 style={{ color: "#5E5A00" }}>Crypto News </h4>
                 <p>
                   A website that displays news about Crypto currencies made with
                   Vue
@@ -124,9 +120,9 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="box">
-              <div className="text">
-                <h4>Instagram Clone </h4>
+            <div className="box" style={{ background: "#FF3CE0" }}>
+              <div className="text" style={{ color: "#491340" }}>
+                <h4 style={{ color: "#491340" }}>Instagram Clone </h4>
                 <p>
                   A web clone of Instagram, made with React, nodejs and MongoDB
                 </p>
@@ -141,10 +137,10 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="box">
+            <div className="box" style={{ background: "#FCB64C" }}>
               <div className="text">
-                <h4>Chat App </h4>
-                <p>
+                <h4 style={{ color: "#5D3800" }}>Chat App </h4>
+                <p style={{ color: "#5D3800" }}>
                   {" "}
                   A messaging app made with Nuxtjs, Vue, Vuetify and Firebase{" "}
                 </p>
@@ -159,10 +155,12 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="box">
+            <div className="box" style={{ background: "#8888FF" }}>
               <div className="text">
-                <h4>Quizer</h4>
-                <p>An Online Quiz App made with React </p>
+                <h4 style={{ color: "#131F5D" }}>Quizer</h4>
+                <p style={{ color: "#131F5D" }}>
+                  An Online Quiz App made with React{" "}
+                </p>
               </div>
               <div className="quiz">
                 {/* <img src={cry} alt="crypto mockup" /> */}
@@ -175,10 +173,10 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="box">
+            <div className="box" style={{ background: "#47D54C" }}>
               <div className="text">
-                <h4>Whoisng </h4>
-                <p>
+                <h4 style={{ color: "#064600" }}>Whoisng </h4>
+                <p style={{ color: "#064600" }}>
                   A website that searches and displays information about domain,
                   made with React
                 </p>

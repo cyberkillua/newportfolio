@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-import killua from "./killua.png"
+import killua from "./killua.png";
 import { animateScroll as scroll } from "react-scroll";
 
 const Nav = styled.nav`
@@ -12,18 +12,18 @@ const Nav = styled.nav`
   left: 0px;
   top: 0px;
   color: #ffffff;
-  background: #204294;
+  background: #050505;
   margin-top: 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   @media (max-width: 768px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .logo {
-    padding-top: 35px;
+    padding-top: 40px;
     color: white;
     cursor: pointer;
     height: 57px;
@@ -42,8 +42,9 @@ const Navbar = () => {
         className="logo"
         onClick={() => {
           scroll.scrollToTop();
-        }}>
-        <img src={killua} alt="logo"/>
+        }}
+      >
+        <img src={killua} alt="logo" />
       </div>
       <Burger />
     </Nav>

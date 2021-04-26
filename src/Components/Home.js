@@ -21,6 +21,8 @@ const Section = styled.section`
   margin-top: 100px;
   padding-top: 100px;
   @media (max-width: 768px) {
+    margin-top: 50px;
+    
   }
   .skills {
     margin-top: 20px;
@@ -103,8 +105,8 @@ const Section = styled.section`
     }
   }
   .aboutMe {
-    width: 70%;
-    @media (max-width: 1024px) {
+    width: 60%;
+    @media (max-width: 1025px) {
       width: 100%;
     }
     @media (max-width: 768px) {

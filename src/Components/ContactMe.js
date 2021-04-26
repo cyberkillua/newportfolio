@@ -13,13 +13,13 @@ const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #204294;
+  background: #050505;
   width: 100%;
   height: 163px;
   position: absolute;
   right: 0;
   @media (max-width: 768px) {
-    Height: 84px;
+    height: 84px;
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
@@ -30,19 +30,19 @@ const Footer = styled.footer`
       width: 131px;
     }
     @media (max-width: 768px) {
-      display:none;
+      display: none;
     }
   }
   .copi {
-    display:none;
+    display: none;
     @media (max-width: 768px) {
-      display:inline;
+      display: inline;
       font-family: "Khula", sans-serif;
       font-weight: 100;
       font-size: 6px;
       line-height: 12px;
-      color: #98FB4A;
-      padding-top:15px;
+      color: #98fb4a;
+      padding-top: 15px;
     }
   }
   .contactLinks {
