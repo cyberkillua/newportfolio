@@ -3,7 +3,7 @@ import styled from "styled-components";
 import emoji from "react-easy-emoji";
 import link from "../imgs/link.png";
 import git from "../imgs/git.png";
-import twitter from "../imgs/twitter.png"
+import twitter from "../imgs/twitter.png";
 import html from "../imgs/html.png";
 import css from "../imgs/css.png";
 import sass from "../imgs/sass.png";
@@ -22,7 +22,6 @@ const Section = styled.section`
   padding-top: 100px;
   @media (max-width: 768px) {
     margin-top: 50px;
-    
   }
   .skills {
     margin-top: 20px;
@@ -61,6 +60,7 @@ const Section = styled.section`
         grid-template-columns: repeat(2, 1fr);
       }
       @media (max-width: 768px) {
+        margin-top: 20px;
         grid-template-columns: repeat(1, 1fr);
       }
 
@@ -105,7 +105,7 @@ const Section = styled.section`
     }
   }
   .aboutMe {
-    width: 60%;
+    width: 65%;
     @media (max-width: 1025px) {
       width: 100%;
     }
@@ -217,12 +217,12 @@ const Home = () => {
         <p>Heyyy! {emoji("👋🏾")}</p>
         <h4>
           I'm Moshood Alimi "Killua",
-          <br />
-          I'm a Web Developer<span className="dot">.</span>
+          <br />I build things for the web<span className="dot">.</span>
         </h4>
         <h5>
-          I'm Alimi Moshood a Frontend Developer focused on building responsive
-          and accessible interfaces & experiences on the web.
+          I am a self-taught Frontend Developer based in Nigeria, focused on
+          building responsive & accessible interfaces and experiences on the
+          web.
         </h5>
         <div className="touch">
           <a
@@ -264,9 +264,10 @@ const Home = () => {
       <div className="skills">
         <h3>My skillset</h3>
         <h6>
-          I'm proficient in several skills and i am constanly improving and
-          gaining experience. Here are some of the technologies I have
-          experience with.
+          Right now you can find me hacking away primarily with Reactjs, Nuxtjs,
+          Tailwind and in general anything Javascript, HTML and CSS related.
+          Also been know to dabble in Vuejs from time to time. Here are a few of
+          the technologies i've been working with recently:
         </h6>
         <div className="stuff">
           <table>
