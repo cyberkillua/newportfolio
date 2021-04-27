@@ -26,7 +26,7 @@ body {
   width: 100%;
   max-width: 480px;
   height: 380px;
-  background: url("../imgs/chatbox.png") no-repeat;
+  background: url("../imgs/chatbox.jpg") no-repeat;
   background-size: contain;
   margin: 20px auto 0;
 }
@@ -42,7 +42,7 @@ body {
   width: 100%;
   max-width: 480px;
   height: 380px;
-  background: url("../imgs/who.png") no-repeat;
+  background: url("../imgs/who.jpg") no-repeat;
   background-size: contain;
   margin: 20px auto 0;
 }
