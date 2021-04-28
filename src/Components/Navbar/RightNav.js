@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import killua from "./killua.png";
+import killua from "../../imgs/Bkillua.png";
 
 const Ul = styled.ul`
   list-style: none;
@@ -28,7 +28,8 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #8888ff;
+    background-color: white;
+
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     opacity: ${({ visible }) => (visible ? 0 : 1)};
@@ -42,14 +43,19 @@ const Ul = styled.ul`
     .logo {
       visibility: visible;
       padding-left: 10px;
+      img {
+        width: 113px;
+        height: 57px;
+      }
     }
     .links {
       padding-top: 200px;
       display: flex;
       flex-flow: column nowrap;
       a {
-        color: #ffffff;
-        font-size: x-large;
+        color: black;
+        font-size: xx-large;
+        
       }
     }
   }
@@ -62,45 +68,45 @@ const RightNav = ({ open, setOpen }) => {
         <img src={killua} alt="logo" />
       </div>
       <div className="links">
-      <Link
-        className="link"
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={() => {
-          setOpen(false);
-        }}
-      >
-        <span className="dot"> Home</span>
-      </Link>
-      <Link
-        className="link"
-        to="projects"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={() => {
-          setOpen(false);
-        }}
-      >
-        Projects
-      </Link>
-      <Link
-        className="link"
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={() => {
-          setOpen(false);
-        }}
-      >
-        Connect{" "}
-      </Link>
+        <Link
+          className="link"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
+          <span className="dot"> Home</span>
+        </Link>
+        <Link
+          className="link"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
+          Projects
+        </Link>
+        <Link
+          className="link"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
+          Connect{" "}
+        </Link>
       </div>
     </Ul>
   );
