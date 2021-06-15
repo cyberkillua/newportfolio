@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import killua from "../../imgs/Bkillua.png";
+import killua from "../../imgs/Killua.svg";
 
 const Ul = styled.ul`
   list-style: none;

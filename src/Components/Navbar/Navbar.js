@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-import killua from "./killua.png";
+import killua from "../../imgs/Bkillua.svg";
 import { animateScroll as scroll } from "react-scroll";
 
 const Nav = styled.nav`

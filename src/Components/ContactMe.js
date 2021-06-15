@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import twitter from "../imgs/twitter.png";
-import link from "../imgs/link.png";
-import git from "../imgs/git.png";
-import mail from "../imgs/maill.png";
-import killua from "../imgs/killua.png";
+import twitter from "../imgs/twitter.svg";
+import link from "../imgs/link.svg";
+import git from "../imgs/git.svg";
+import mail from "../imgs/maill.svg";
+import killua from "../imgs/Bkillua.svg";
 
 const Footer = styled.footer`
   margin-top: 100px;
