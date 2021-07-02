@@ -151,15 +151,15 @@ const Projects = () => {
             </div>
           </a>
           <a
-            href="https://killuaquiz.netlify.app/"
+            href="https://www.fezzant.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="box" style={{ background: "#8888FF" }}>
               <div className="text">
-                <h4 style={{ color: "#131F5D" }}>Quizer</h4>
+                <h4 style={{ color: "#131F5D" }}>Fezzant</h4>
                 <p style={{ color: "#131F5D" }}>
-                  An Online Quiz App made with React{" "}
+                  Fezzant offical website made with HTML, tailwind css and javascript{" "}
                 </p>
               </div>
               <div className="quiz">

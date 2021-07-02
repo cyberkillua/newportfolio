@@ -34,8 +34,9 @@ body {
   width: 100%;
   max-width: 480px;
   height: 380px;
-  background: url("../imgs/quiz.jpg") no-repeat;
+  background: url("../imgs/fezzant.jpg") no-repeat;
   background-size: contain;
+  background-position: top;
   margin: 20px auto 0;
 }
 .who {

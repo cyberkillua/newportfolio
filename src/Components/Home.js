@@ -266,7 +266,7 @@ const Home = () => {
         <h6>
           Right now you can find me hacking away primarily with Reactjs, Nuxtjs,
           Tailwind and in general anything Javascript, HTML and CSS related.
-          I Also dabble in Vuejs from time to time. Here are a few of
+          I Also dabble in Vuejs, typescript and react Native from time to time. Here are a few of
           the technologies i've been working with recently:
         </h6>
         <div className="stuff">
