@@ -3,38 +3,38 @@ import styled from "styled-components";
 // import cry from "../imgs/crypto.jpg";
 
 const Projectss = styled.section`
-  padding: 90px 0px;
+  padding: 9rem 0px;
   width: 100%;
 
   @media (max-width: 1024px) {
-    padding: 90px 0;
+   
   }
   h3 {
     font-weight: 800;
-    font-family: "Khula", sans-serif;
-    font-size: 50px;
-    line-height: 59px;
+    font-size: 5rem;
+    line-height: 5.9rem;
     letter-spacing: 0em;
     text-align: left;
-    @media (max-width: 768px) {
-      font-size: 25px;
-      line-height: 29px;
+    @media (max-width: 48rem) {
+      font-size: 2.5rem;
+      line-height: 2.9rem;
     }
   }
   .ProjectGrid {
-    margin-top: 60px;
+    margin-top: 6rem;
     display: grid;
-    grid-row-gap: 60px;
-    grid-column-gap: 75px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-row-gap: 6rem;
+    grid-column-gap: 7.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 
-    @media (max-width: 768px) {
-      margin-top: 30px;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      grid-column-gap: 50px;
+    @media (max-width: 48rem) {
+      margin-top: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      grid-column-gap: 5rem;
     }
     a {
       color: white;
+      animation: all .2s;
     }
     a:hover {
       text-decoration: none;
@@ -42,46 +42,48 @@ const Projectss = styled.section`
     }
     .box {
       position: relative;
-      padding: 0 20px;
-      height: 680px;
+      padding: 0 2rem;
+      height: 70rem;
       border-radius: 10px;
-      /* background: #5252c2; */
-      box-sizing: border-box;
-
-      @media (max-width: 768px) {
-        height: 500px;
+      @media (max-width: 48rem) {
+        height: 50rem;
         margin: auto;
-        padding-left: 10px;
+        padding-left: 1rem;
       }
       .text {
-        padding: 40px 20px 20px;
-        height: 300px;
-        @media (max-width: 768px) {
-          height: 250px;
-          padding-right: 10px;
+        padding: 4rem 2rem 2rem;
+        height: 30rem;
+        @media (max-width: 48rem) {
+          height: 25rem;
+          padding-right: 1rem;
         }
         h4 {
           text-transform: uppercase;
           font-weight: 800;
           letter-spacing: 3px;
-          font-size: 18px;
-          font-family: "Khula", sans-serif;
-          line-height: 41px;
-          color: #ffffff;
-          @media (max-width: 768px) {
-            font-size: 17px;
+          font-size: 1.8rem;
+          line-height: 4.1rem;
+          color: #fff;
+          @media (max-width: 64rem) {
+            font-size: 1.5rem;
+          }
+          @media (max-width: 48rem) {
+            font-size: 1.3rem;
           }
         }
 
         p {
           font-family: "Manrope", sans-serif;
           font-weight: 800;
-          font-size: 37px;
-          padding-right: 60px;
-          margin-top: 15px;
+          font-size: 3.5rem;
+          padding-right: 6rem;
+          margin-top: 1.5rem;
           line-height: 1.2;
-          @media (max-width: 768px) {
-            font-size: 25px;
+          @media (max-width: 64rem) {
+            font-size: 3rem;
+          }
+          @media (max-width: 48rem) {
+            font-size: 2rem;
             padding-right: 0;
           }
         }

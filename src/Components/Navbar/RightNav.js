@@ -7,29 +7,30 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  padding-top: 40px;
   .logo {
     visibility: hidden;
   }
-
+  .links {
+    display: flex;
+    align-items: center;
+  }
   a {
-    padding: 18px 20px;
-    color: #ffffff;
+    padding: 0 2rem;
+    color: #fff;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: "Khula", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.3rem;
     .dot {
-      color: #98fb4a;
+      color: var(--secondary-color);
     }
   }
   a:hover {
     text-decoration: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     flex-flow: column nowrap;
     background-color: white;
-
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     opacity: ${({ visible }) => (visible ? 0 : 1)};
@@ -42,20 +43,18 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     .logo {
       visibility: visible;
-      padding-left: 10px;
+      padding-left: 1rem;
       img {
-        width: 113px;
-        height: 57px;
+        height: 5.7rem;
       }
     }
     .links {
-      padding-top: 200px;
-      display: flex;
-      flex-flow: column nowrap;
+      padding-top: 20rem;
+      flex-flow: column;
       a {
         color: black;
-        font-size: xx-large;
-        
+        font-size: 3rem;
+        padding: 1rem 0;
       }
     }
   }

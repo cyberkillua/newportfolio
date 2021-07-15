@@ -6,31 +6,26 @@ import { animateScroll as scroll } from "react-scroll";
 
 const Nav = styled.nav`
   position: fixed;
+  background-color: var(--primary-color);
   z-index: 9999;
   width: 100%;
-  height: 120px;
-  left: 0px;
-  top: 0px;
-  color: #ffffff;
-  background: #050505;
-  margin-top: 0;
+  height: 12rem;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  @media (max-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  @media (max-width: 48rem) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .logo {
-    padding-top: 40px;
-    color: white;
     cursor: pointer;
-    height: 57px;
-    width: 131px;
+    height: 5.5rem;
     @media (max-width: 768px) {
-      height: 38px;
-      width: 88px;
+      height: 3.8rem;
     }
   }
 `;
@@ -38,14 +33,14 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div
+      <header
         className="logo"
         onClick={() => {
           scroll.scrollToTop();
         }}
       >
         <img src={killua} alt="logo" />
-      </div>
+      </header>
       <Burger />
     </Nav>
   );
