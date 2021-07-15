@@ -20,7 +20,7 @@ import giticon from "../imgs/giticon.svg";
 const Section = styled.section`
   margin-top: 10rem;
   padding-top: 10rem;
-  @media (max-width: 48rem) {
+  @media (max-width: 48em) {
     margin-top: 5rem;
   }
   .skills {
@@ -33,7 +33,7 @@ const Section = styled.section`
       line-height: 5.9rem;
       letter-spacing: 0em;
       text-align: left;
-      @media (max-width: 48px) {
+      @media (max-width: 48em) {
         font-size: 2.5rem;
         line-height: 2.9rem;
       }
@@ -44,7 +44,7 @@ const Section = styled.section`
       font-size: 2.5rem;
       line-height: 2.9rem;
       text-align: left;
-      @media (max-width: 48rem) {
+      @media (max-width: 48em) {
         font-size: 1.5rem;
         line-height: 1.8rem;
       }
@@ -54,11 +54,11 @@ const Section = styled.section`
       display: grid;
       grid-gap: 1rem 3rem;
       grid-template-columns: repeat(4, 1fr);
-      @media (max-width: 64rem) {
+      @media (max-width: 64em) {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 2rem;
       }
-      @media (max-width: 48rem) {
+      @media (max-width: 48em) {
         margin-top: 2rem;
         grid-template-columns: repeat(1, 1fr);
       }
@@ -68,11 +68,11 @@ const Section = styled.section`
         height: 25rem;
         text-align: center;
 
-        @media (max-width: 64rem) {
+        @media (max-width: 64em) {
           width: auto;
           margin: auto;
         }
-        @media (max-width: 48rem) {
+        @media (max-width: 48em) {
           width: auto;
           margin: auto;
           margin-top: 5rem;
@@ -102,20 +102,20 @@ const Section = styled.section`
   }
   .aboutMe {
     width: 95%;
-    @media (max-width: 64rem) {
+    @media (max-width: 64em) {
       width: 100%;
     }
-    @media (max-width: 48rem) {
+    @media (max-width: 48em) {
       width: 100%;
     }
     p {
-      font-size: 30px;
-      line-height: 35px;
+      font-size: 3rem;
+      line-height: 3.5rem;
       letter-spacing: 0em;
       text-align: left;
       font-weight: 500;
       padding-bottom: 1rem;
-      @media (max-width: 48rem) {
+      @media (max-width: 48em) {
         font-size: 1.5rem;
         line-height: 1.8rem;
       }
@@ -128,7 +128,7 @@ const Section = styled.section`
       line-height: 7.5rem;
       letter-spacing: 0em;
       text-align: left;
-      @media (max-width: 48rem) {
+      @media (max-width: 48em) {
         font-size: 2rem;
         line-height: 2.3rem;
       }
@@ -145,7 +145,7 @@ const Section = styled.section`
       line-height: 3.8rem;
       letter-spacing: 0em;
       text-align: left;
-      @media (max-width: 48rem) {
+      @media (max-width: 48em) {
         font-size: 1.5rem;
         line-height: 2.3rem;
       }
@@ -159,7 +159,7 @@ const Section = styled.section`
         margin-top: 2rem;
         margin-right: 4rem;
 
-        @media (max-width: 48rem) {
+        @media (max-width: 48em) {
           height: 2rem;
           width: 2rem;
           border-radius: 0px;
@@ -186,10 +186,10 @@ const Section = styled.section`
         a:hover {
           text-decoration: none;
         }
-        @media (max-width: 64rem) {
+        @media (max-width: 64em) {
           margin-left: 3rem;
         }
-        @media (max-width: 48rem) {
+        @media (max-width: 48em) {
           height: 3.5rem;
           width: 8.8rem;
           font-size: 1.2rem;

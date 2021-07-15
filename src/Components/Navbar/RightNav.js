@@ -28,7 +28,7 @@ const Ul = styled.ul`
   a:hover {
     text-decoration: none;
   }
-  @media (max-width: 48rem) {
+  @media (max-width: 48em) {
     flex-flow: column nowrap;
     background-color: white;
     position: fixed;
@@ -44,6 +44,7 @@ const Ul = styled.ul`
     .logo {
       visibility: visible;
       padding-left: 1rem;
+      margin-top: 3rem;
       img {
         height: 5.7rem;
       }

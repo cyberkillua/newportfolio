@@ -17,14 +17,14 @@ const Nav = styled.nav`
   align-items: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  @media (max-width: 48rem) {
+  @media (max-width: 48em) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
   .logo {
     cursor: pointer;
     height: 5.5rem;
-    @media (max-width: 768px) {
+    @media (max-width: 48em) {
       height: 3.8rem;
     }
   }

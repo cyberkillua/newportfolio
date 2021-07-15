@@ -77,7 +77,7 @@ body {
   overflow-y: hidden;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
   body {
     font-size: 55%;
   }
