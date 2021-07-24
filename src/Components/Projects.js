@@ -113,23 +113,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          <a
-            href="https://instaclone70.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="box" style={{ background: "#FF3CE0" }}>
-              <div className="text" style={{ color: "#491340" }}>
-                <h4 style={{ color: "#491340" }}>Instagram Clone </h4>
-                <p>
-                  A web clone of Instagram, made with React, nodejs and MongoDB
-                </p>
-              </div>
-              <div className="insta">
-                {/* <img src={cry} alt="crypto mockup" /> */}
-              </div>
-            </div>
-          </a>
+         
           <a
             href="https://moshchatapp.netlify.app"
             target="_blank"
